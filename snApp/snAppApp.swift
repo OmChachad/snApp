@@ -28,10 +28,9 @@ struct snAppApp: App {
 
         Settings {
             SettingsView()
-            .frame(minWidth: 350)
-            .frame(minHeight: 175)
+                .frame(minWidth: 350, minHeight: 210)
+                .fixedSize()
         }
-        .defaultSize(width: 350, height: 175)
         .defaultPosition(.center)
         
         
