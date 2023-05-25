@@ -32,6 +32,9 @@ struct SettingsView: View {
                 .tag(3)
         }
         .animation(.default, value: current)
+        .onAppear {
+            NSApp.activate(ignoringOtherApps: true)
+        }
     }
 }
 
