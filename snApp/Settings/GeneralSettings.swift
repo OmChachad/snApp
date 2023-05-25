@@ -59,7 +59,7 @@ struct GeneralSettings: View {
                     Spacer()
                     
                     Button("Developer's Website") {
-                        openURL(URL(string: "https://itecheverything.com/")!)
+                        openURL(URL(string: "https://starlightapps.org/")!)
                     }
                 }
                 .buttonStyle(.link)
