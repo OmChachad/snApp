@@ -44,9 +44,10 @@ struct snAppApp: App {
 
 class AppDelegate: NSObject, NSApplicationDelegate {
     private var menuBarExtra: FluidMenuBarExtra?
-
+    @AppStorage("AppearanceStyle") var appearance: Appearance = .win11
+    
     func applicationDidFinishLaunching(_ notification: Notification) {
-        self.menuBarExtra = FluidMenuBarExtra(title: "Snapp", systemImage: "rectangle.grid.2x2.fill") {
+        self.menuBarExtra = FluidMenuBarExtra(title: "Snapp", systemImage: appearance == .win11 ? "rectangle.grid.2x2.fill" : "ellipsis") {
             MenuBar()
         }
     }
