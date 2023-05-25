@@ -1,0 +1,656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C243419629B2037600D14080 /* AppearanceSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C243419529B2037600D14080 /* AppearanceSettings.swift */; };
+		C286714929C55A87003D563A /* ShortcutsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C286714829C55A87003D563A /* ShortcutsHandler.swift */; };
+		C2ADEBEA29A725EF0038DEDB /* SnapInstallationChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2ADEBE929A725EF0038DEDB /* SnapInstallationChecker.swift */; };
+		C2ADEBEC29A72C430038DEDB /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2ADEBEB29A72C430038DEDB /* Settings.swift */; };
+		C2ADEBEF29A7497D0038DEDB /* FluidMenuBarExtra in Frameworks */ = {isa = PBXBuildFile; productRef = C2ADEBEE29A7497D0038DEDB /* FluidMenuBarExtra */; };
+		C2B2790929C56F7000914E63 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2B2790729C56F1500914E63 /* ScriptingBridge.framework */; };
+		C2DA3FD8298FB58300DC322E /* snAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DA3FD7298FB58300DC322E /* snAppApp.swift */; };
+		C2DA3FDA298FB58300DC322E /* GeneralSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DA3FD9298FB58300DC322E /* GeneralSettings.swift */; };
+		C2DA3FDC298FB58400DC322E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2DA3FDB298FB58400DC322E /* Assets.xcassets */; };
+		C2DA3FDF298FB58400DC322E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2DA3FDE298FB58400DC322E /* Preview Assets.xcassets */; };
+		C2DA3FEA298FB58400DC322E /* snAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DA3FE9298FB58400DC322E /* snAppTests.swift */; };
+		C2DA3FF4298FB58400DC322E /* snAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DA3FF3298FB58400DC322E /* snAppUITests.swift */; };
+		C2DA3FF6298FB58400DC322E /* snAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DA3FF5298FB58400DC322E /* snAppUITestsLaunchTests.swift */; };
+		C2DA4003298FB5AE00DC322E /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DA4002298FB5AE00DC322E /* MenuBar.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C2DA3FE6298FB58400DC322E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2DA3FCC298FB58300DC322E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2DA3FD3298FB58300DC322E;
+			remoteInfo = snApp;
+		};
+		C2DA3FF0298FB58400DC322E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2DA3FCC298FB58300DC322E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2DA3FD3298FB58300DC322E;
+			remoteInfo = snApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C243419529B2037600D14080 /* AppearanceSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceSettings.swift; sourceTree = "<group>"; };
+		C286714829C55A87003D563A /* ShortcutsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsHandler.swift; sourceTree = "<group>"; };
+		C2ADEBE929A725EF0038DEDB /* SnapInstallationChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapInstallationChecker.swift; sourceTree = "<group>"; };
+		C2ADEBEB29A72C430038DEDB /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		C2B2790729C56F1500914E63 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
+		C2DA3FD4298FB58300DC322E /* snApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = snApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2DA3FD7298FB58300DC322E /* snAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = snAppApp.swift; sourceTree = "<group>"; };
+		C2DA3FD9298FB58300DC322E /* GeneralSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSettings.swift; sourceTree = "<group>"; };
+		C2DA3FDB298FB58400DC322E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C2DA3FDE298FB58400DC322E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C2DA3FE0298FB58400DC322E /* snApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = snApp.entitlements; sourceTree = "<group>"; };
+		C2DA3FE5298FB58400DC322E /* snAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = snAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2DA3FE9298FB58400DC322E /* snAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = snAppTests.swift; sourceTree = "<group>"; };
+		C2DA3FEF298FB58400DC322E /* snAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = snAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2DA3FF3298FB58400DC322E /* snAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = snAppUITests.swift; sourceTree = "<group>"; };
+		C2DA3FF5298FB58400DC322E /* snAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = snAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C2DA4002298FB5AE00DC322E /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2DA3FD1298FB58300DC322E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2ADEBEF29A7497D0038DEDB /* FluidMenuBarExtra in Frameworks */,
+				C2B2790929C56F7000914E63 /* ScriptingBridge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2DA3FE2298FB58400DC322E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2DA3FEC298FB58400DC322E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C243419429B2036700D14080 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C2ADEBEB29A72C430038DEDB /* Settings.swift */,
+				C2DA3FD9298FB58300DC322E /* GeneralSettings.swift */,
+				C243419529B2037600D14080 /* AppearanceSettings.swift */,
+				C2ADEBE929A725EF0038DEDB /* SnapInstallationChecker.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		C2B2790629C56F1500914E63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2B2790729C56F1500914E63 /* ScriptingBridge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2DA3FCB298FB58300DC322E = {
+			isa = PBXGroup;
+			children = (
+				C2DA3FD6298FB58300DC322E /* snApp */,
+				C2DA3FE8298FB58400DC322E /* snAppTests */,
+				C2DA3FF2298FB58400DC322E /* snAppUITests */,
+				C2DA3FD5298FB58300DC322E /* Products */,
+				C2B2790629C56F1500914E63 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C2DA3FD5298FB58300DC322E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2DA3FD4298FB58300DC322E /* snApp.app */,
+				C2DA3FE5298FB58400DC322E /* snAppTests.xctest */,
+				C2DA3FEF298FB58400DC322E /* snAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2DA3FD6298FB58300DC322E /* snApp */ = {
+			isa = PBXGroup;
+			children = (
+				C2DA3FD7298FB58300DC322E /* snAppApp.swift */,
+				C243419429B2036700D14080 /* Settings */,
+				C2DA4002298FB5AE00DC322E /* MenuBar.swift */,
+				C286714829C55A87003D563A /* ShortcutsHandler.swift */,
+				C2DA3FDB298FB58400DC322E /* Assets.xcassets */,
+				C2DA3FE0298FB58400DC322E /* snApp.entitlements */,
+				C2DA3FDD298FB58400DC322E /* Preview Content */,
+			);
+			path = snApp;
+			sourceTree = "<group>";
+		};
+		C2DA3FDD298FB58400DC322E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C2DA3FDE298FB58400DC322E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C2DA3FE8298FB58400DC322E /* snAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				C2DA3FE9298FB58400DC322E /* snAppTests.swift */,
+			);
+			path = snAppTests;
+			sourceTree = "<group>";
+		};
+		C2DA3FF2298FB58400DC322E /* snAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C2DA3FF3298FB58400DC322E /* snAppUITests.swift */,
+				C2DA3FF5298FB58400DC322E /* snAppUITestsLaunchTests.swift */,
+			);
+			path = snAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C2DA3FD3298FB58300DC322E /* snApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2DA3FF9298FB58400DC322E /* Build configuration list for PBXNativeTarget "snApp" */;
+			buildPhases = (
+				C2DA3FD0298FB58300DC322E /* Sources */,
+				C2DA3FD1298FB58300DC322E /* Frameworks */,
+				C2DA3FD2298FB58300DC322E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = snApp;
+			packageProductDependencies = (
+				C2ADEBEE29A7497D0038DEDB /* FluidMenuBarExtra */,
+			);
+			productName = snApp;
+			productReference = C2DA3FD4298FB58300DC322E /* snApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C2DA3FE4298FB58400DC322E /* snAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2DA3FFC298FB58400DC322E /* Build configuration list for PBXNativeTarget "snAppTests" */;
+			buildPhases = (
+				C2DA3FE1298FB58400DC322E /* Sources */,
+				C2DA3FE2298FB58400DC322E /* Frameworks */,
+				C2DA3FE3298FB58400DC322E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2DA3FE7298FB58400DC322E /* PBXTargetDependency */,
+			);
+			name = snAppTests;
+			productName = snAppTests;
+			productReference = C2DA3FE5298FB58400DC322E /* snAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C2DA3FEE298FB58400DC322E /* snAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2DA3FFF298FB58400DC322E /* Build configuration list for PBXNativeTarget "snAppUITests" */;
+			buildPhases = (
+				C2DA3FEB298FB58400DC322E /* Sources */,
+				C2DA3FEC298FB58400DC322E /* Frameworks */,
+				C2DA3FED298FB58400DC322E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2DA3FF1298FB58400DC322E /* PBXTargetDependency */,
+			);
+			name = snAppUITests;
+			productName = snAppUITests;
+			productReference = C2DA3FEF298FB58400DC322E /* snAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2DA3FCC298FB58300DC322E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					C2DA3FD3298FB58300DC322E = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					C2DA3FE4298FB58400DC322E = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = C2DA3FD3298FB58300DC322E;
+					};
+					C2DA3FEE298FB58400DC322E = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = C2DA3FD3298FB58300DC322E;
+					};
+				};
+			};
+			buildConfigurationList = C2DA3FCF298FB58300DC322E /* Build configuration list for PBXProject "snApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C2DA3FCB298FB58300DC322E;
+			packageReferences = (
+				C2ADEBED29A7497D0038DEDB /* XCRemoteSwiftPackageReference "fluid-menu-bar-extra" */,
+			);
+			productRefGroup = C2DA3FD5298FB58300DC322E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2DA3FD3298FB58300DC322E /* snApp */,
+				C2DA3FE4298FB58400DC322E /* snAppTests */,
+				C2DA3FEE298FB58400DC322E /* snAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C2DA3FD2298FB58300DC322E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2DA3FDF298FB58400DC322E /* Preview Assets.xcassets in Resources */,
+				C2DA3FDC298FB58400DC322E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2DA3FE3298FB58400DC322E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2DA3FED298FB58400DC322E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2DA3FD0298FB58300DC322E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2DA3FDA298FB58300DC322E /* GeneralSettings.swift in Sources */,
+				C2ADEBEA29A725EF0038DEDB /* SnapInstallationChecker.swift in Sources */,
+				C243419629B2037600D14080 /* AppearanceSettings.swift in Sources */,
+				C2DA3FD8298FB58300DC322E /* snAppApp.swift in Sources */,
+				C2DA4003298FB5AE00DC322E /* MenuBar.swift in Sources */,
+				C286714929C55A87003D563A /* ShortcutsHandler.swift in Sources */,
+				C2ADEBEC29A72C430038DEDB /* Settings.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2DA3FE1298FB58400DC322E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2DA3FEA298FB58400DC322E /* snAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2DA3FEB298FB58400DC322E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2DA3FF4298FB58400DC322E /* snAppUITests.swift in Sources */,
+				C2DA3FF6298FB58400DC322E /* snAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C2DA3FE7298FB58400DC322E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2DA3FD3298FB58300DC322E /* snApp */;
+			targetProxy = C2DA3FE6298FB58400DC322E /* PBXContainerItemProxy */;
+		};
+		C2DA3FF1298FB58400DC322E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2DA3FD3298FB58300DC322E /* snApp */;
+			targetProxy = C2DA3FF0298FB58400DC322E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C2DA3FF7298FB58400DC322E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C2DA3FF8298FB58400DC322E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		C2DA3FFA298FB58400DC322E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = snApp/snApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"snApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 3S6NT5MUQZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "snApp requires AppleScript to run shortcuts.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.itecheverything.snApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C2DA3FFB298FB58400DC322E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = snApp/snApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"snApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 3S6NT5MUQZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "snApp requires AppleScript to run shortcuts.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.itecheverything.snApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C2DA3FFD298FB58400DC322E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3S6NT5MUQZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.itecheverything.snAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/snApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/snApp";
+			};
+			name = Debug;
+		};
+		C2DA3FFE298FB58400DC322E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3S6NT5MUQZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.itecheverything.snAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/snApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/snApp";
+			};
+			name = Release;
+		};
+		C2DA4000298FB58400DC322E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3S6NT5MUQZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.itecheverything.snAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = snApp;
+			};
+			name = Debug;
+		};
+		C2DA4001298FB58400DC322E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3S6NT5MUQZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.itecheverything.snAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = snApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2DA3FCF298FB58300DC322E /* Build configuration list for PBXProject "snApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2DA3FF7298FB58400DC322E /* Debug */,
+				C2DA3FF8298FB58400DC322E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2DA3FF9298FB58400DC322E /* Build configuration list for PBXNativeTarget "snApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2DA3FFA298FB58400DC322E /* Debug */,
+				C2DA3FFB298FB58400DC322E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2DA3FFC298FB58400DC322E /* Build configuration list for PBXNativeTarget "snAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2DA3FFD298FB58400DC322E /* Debug */,
+				C2DA3FFE298FB58400DC322E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2DA3FFF298FB58400DC322E /* Build configuration list for PBXNativeTarget "snAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2DA4000298FB58400DC322E /* Debug */,
+				C2DA4001298FB58400DC322E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C2ADEBED29A7497D0038DEDB /* XCRemoteSwiftPackageReference "fluid-menu-bar-extra" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lfroms/fluid-menu-bar-extra.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C2ADEBEE29A7497D0038DEDB /* FluidMenuBarExtra */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C2ADEBED29A7497D0038DEDB /* XCRemoteSwiftPackageReference "fluid-menu-bar-extra" */;
+			productName = FluidMenuBarExtra;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C2DA3FCC298FB58300DC322E /* Project object */;
+}
