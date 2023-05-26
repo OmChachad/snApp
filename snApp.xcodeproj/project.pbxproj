@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C243419629B2037600D14080 /* AppearanceSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C243419529B2037600D14080 /* AppearanceSettings.swift */; };
+		C25111232A20D1B40051BED0 /* Introduction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25111222A20D1B40051BED0 /* Introduction.swift */; };
 		C286714929C55A87003D563A /* ShortcutsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C286714829C55A87003D563A /* ShortcutsHandler.swift */; };
 		C2ADEBEA29A725EF0038DEDB /* SnapInstallationChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2ADEBE929A725EF0038DEDB /* SnapInstallationChecker.swift */; };
 		C2ADEBEC29A72C430038DEDB /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2ADEBEB29A72C430038DEDB /* Settings.swift */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		C243419529B2037600D14080 /* AppearanceSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceSettings.swift; sourceTree = "<group>"; };
+		C25111222A20D1B40051BED0 /* Introduction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Introduction.swift; sourceTree = "<group>"; };
 		C286714829C55A87003D563A /* ShortcutsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsHandler.swift; sourceTree = "<group>"; };
 		C2ADEBE929A725EF0038DEDB /* SnapInstallationChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapInstallationChecker.swift; sourceTree = "<group>"; };
 		C2ADEBEB29A72C430038DEDB /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				C2DA3FD7298FB58300DC322E /* snAppApp.swift */,
+				C25111222A20D1B40051BED0 /* Introduction.swift */,
 				C243419429B2036700D14080 /* Settings */,
 				C2DA4002298FB5AE00DC322E /* MenuBar.swift */,
 				C286714829C55A87003D563A /* ShortcutsHandler.swift */,
@@ -309,6 +312,7 @@
 				C2DA4003298FB5AE00DC322E /* MenuBar.swift in Sources */,
 				C286714929C55A87003D563A /* ShortcutsHandler.swift in Sources */,
 				C2ADEBEC29A72C430038DEDB /* Settings.swift in Sources */,
+				C25111232A20D1B40051BED0 /* Introduction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

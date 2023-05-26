@@ -11,27 +11,68 @@ import FluidMenuBarExtra
 @main
 struct snAppApp: App {
     @NSApplicationDelegateAdaptor private var appDelegate: AppDelegate
+
+    @State private var showIntroduction = true
+    
+    init() {
+        if showIntroduction {
+            showIntroductionView()
+        }
+    }
     
     var body: some Scene {
-        /// NEED TO SHOW THIS LATER WITH ONBOARDING
-//        WindowGroup {
-//            Home()
-//                .onAppear {
-//                    NSApp.activate(ignoringOtherApps: true)
-//                    NSApp.mainWindow?.orderFrontRegardless()
-//                }
-//
-//
-//        }
-//            .windowResizability(.contentSize)
-//            .defaultPosition(.center)
-
         Settings {
             SettingsView()
                 .frame(minWidth: 350, minHeight: 210)
                 .fixedSize()
         }
         .defaultPosition(.center)
+    }
+    
+    func showIntroductionView() {
+        let onboardingWindow = NSWindow(
+            contentRect: NSRect(x: 0, y: 0, width: 600, height: 475),
+            styleMask: [.titled],
+            backing: .buffered,
+            defer: false
+        )
+        onboardingWindow.contentView = NSHostingView(rootView: Introduction(completionAction: {
+            showIntroduction = false
+            NSApp.setActivationPolicy(.prohibited)
+            onboardingWindow.close()
+        }))
+//        onboardingWindow.titlebarAppearsTransparent = true
+//        onboardingWindow.titleVisibility = .hidden
+        onboardingWindow.center()
+        onboardingWindow.makeKeyAndOrderFront(nil)
+        
+        NSApp.setActivationPolicy(.regular)
+    }
+
+}
+
+struct OnboardingView: View {
+    let isComplete: () -> Void
+
+    var body: some View {
+        VStack {
+            Text("Welcome to Your App")
+                .font(.title)
+                .padding()
+
+            Text("Onboarding Content")
+                .font(.subheadline)
+                .padding()
+
+            Button(action: isComplete) {
+                Text("Get Started")
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(8)
+            }
+            .padding()
+        }
     }
 }
 
