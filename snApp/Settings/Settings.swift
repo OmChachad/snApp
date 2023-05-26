@@ -12,8 +12,6 @@ struct SettingsView: View {
     var body: some View {
         TabView(selection: $current) {
             GeneralSettings()
-            
-            //.fixedSize()
                 .tabItem {
                     Label("General", systemImage: "gear")
                 }
@@ -24,12 +22,6 @@ struct SettingsView: View {
                     Label("Appearance", systemImage: "paintbrush.fill")
                 }
                 .tag(2)
-            
-            MenuBar()
-                .tabItem {
-                    Label("Appearance", systemImage: "paintbrush.fill")
-                }
-                .tag(3)
         }
         .animation(.default, value: current)
         .onAppear {
