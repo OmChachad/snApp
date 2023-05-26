@@ -32,12 +32,6 @@ struct snAppApp: App {
                 .fixedSize()
         }
         .defaultPosition(.center)
-        
-        
-//        MenuBarExtra("Snapp", systemImage: "rectangle.grid.2x2.fill") {
-//            MenuBar()
-//        }
-//        .menuBarExtraStyle(.window)
     }
 }
 
