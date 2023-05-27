@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		C243419629B2037600D14080 /* AppearanceSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C243419529B2037600D14080 /* AppearanceSettings.swift */; };
 		C25111232A20D1B40051BED0 /* Introduction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25111222A20D1B40051BED0 /* Introduction.swift */; };
+		C25111262A21F5DC0051BED0 /* DarkDemo.mov in Resources */ = {isa = PBXBuildFile; fileRef = C25111252A21F5DC0051BED0 /* DarkDemo.mov */; };
+		C25111282A21F5E00051BED0 /* LightDemo.mov in Resources */ = {isa = PBXBuildFile; fileRef = C25111272A21F5E00051BED0 /* LightDemo.mov */; };
 		C286714929C55A87003D563A /* ShortcutsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C286714829C55A87003D563A /* ShortcutsHandler.swift */; };
 		C2ADEBEA29A725EF0038DEDB /* SnapInstallationChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2ADEBE929A725EF0038DEDB /* SnapInstallationChecker.swift */; };
 		C2ADEBEC29A72C430038DEDB /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2ADEBEB29A72C430038DEDB /* Settings.swift */; };
@@ -44,6 +46,8 @@
 /* Begin PBXFileReference section */
 		C243419529B2037600D14080 /* AppearanceSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceSettings.swift; sourceTree = "<group>"; };
 		C25111222A20D1B40051BED0 /* Introduction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Introduction.swift; sourceTree = "<group>"; };
+		C25111252A21F5DC0051BED0 /* DarkDemo.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = DarkDemo.mov; sourceTree = "<group>"; };
+		C25111272A21F5E00051BED0 /* LightDemo.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = LightDemo.mov; sourceTree = "<group>"; };
 		C286714829C55A87003D563A /* ShortcutsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsHandler.swift; sourceTree = "<group>"; };
 		C2ADEBE929A725EF0038DEDB /* SnapInstallationChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapInstallationChecker.swift; sourceTree = "<group>"; };
 		C2ADEBEB29A72C430038DEDB /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
@@ -100,6 +104,16 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		C25111242A21F5C80051BED0 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C2DA3FDB298FB58400DC322E /* Assets.xcassets */,
+				C25111272A21F5E00051BED0 /* LightDemo.mov */,
+				C25111252A21F5DC0051BED0 /* DarkDemo.mov */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		C2B2790629C56F1500914E63 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +125,7 @@
 		C2DA3FCB298FB58300DC322E = {
 			isa = PBXGroup;
 			children = (
+				C25111242A21F5C80051BED0 /* Assets */,
 				C2DA3FD6298FB58300DC322E /* snApp */,
 				C2DA3FE8298FB58400DC322E /* snAppTests */,
 				C2DA3FF2298FB58400DC322E /* snAppUITests */,
@@ -137,7 +152,6 @@
 				C243419429B2036700D14080 /* Settings */,
 				C2DA4002298FB5AE00DC322E /* MenuBar.swift */,
 				C286714829C55A87003D563A /* ShortcutsHandler.swift */,
-				C2DA3FDB298FB58400DC322E /* Assets.xcassets */,
 				C2DA3FE0298FB58400DC322E /* snApp.entitlements */,
 				C2DA3FDD298FB58400DC322E /* Preview Content */,
 			);
@@ -280,6 +294,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2DA3FDF298FB58400DC322E /* Preview Assets.xcassets in Resources */,
+				C25111262A21F5DC0051BED0 /* DarkDemo.mov in Resources */,
+				C25111282A21F5E00051BED0 /* LightDemo.mov in Resources */,
 				C2DA3FDC298FB58400DC322E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
