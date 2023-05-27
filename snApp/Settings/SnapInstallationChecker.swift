@@ -17,7 +17,7 @@ struct SnapInstallationChecker: View {
         Group {
             if snapInstallationStatus == false {
                 Label {
-                    Text("Snap Is Not Installed")
+                    Text("Snap Shortcut Is Not Installed")
                 } icon: {
                     Image(systemName: "xmark.circle.fill")
                         .foregroundColor(.red)
@@ -40,7 +40,7 @@ struct SnapInstallationChecker: View {
                 }
             } else {
                 Label {
-                    Text("Snap Is Installed")
+                    Text("Shortcut Is Installed")
                 } icon: {
                     Image(systemName: "checkmark.circle.fill")
                         .foregroundColor(.green)
