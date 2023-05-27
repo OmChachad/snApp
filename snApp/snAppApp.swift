@@ -13,7 +13,7 @@ struct snAppApp: App {
     @NSApplicationDelegateAdaptor private var appDelegate: AppDelegate
     @AppStorage("AppearanceStyle") var appearance: Appearance = .win11
     
-    @State private var showIntroduction = true
+    @AppStorage("showIntroduction") private var showIntroduction = true
     
     init() {
         if showIntroduction {
@@ -61,33 +61,6 @@ struct snAppApp: App {
         onboardingWindow.makeKeyAndOrderFront(nil)
         
         NSApp.setActivationPolicy(.regular)
-    }
-
-
-}
-
-struct OnboardingView: View {
-    let isComplete: () -> Void
-
-    var body: some View {
-        VStack {
-            Text("Welcome to Your App")
-                .font(.title)
-                .padding()
-
-            Text("Onboarding Content")
-                .font(.subheadline)
-                .padding()
-
-            Button(action: isComplete) {
-                Text("Get Started")
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(8)
-            }
-            .padding()
-        }
     }
 }
 
