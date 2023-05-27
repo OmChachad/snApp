@@ -35,18 +35,28 @@ struct snAppApp: App {
     
     func showIntroductionView() {
         let onboardingWindow = NSWindow(
-            contentRect: NSRect(x: 0, y: 0, width: 600, height: 475),
+            contentRect: NSRect(x: 0, y: 0, width: 800, height: 550),
             styleMask: [.titled],
             backing: .buffered,
             defer: false
         )
-        onboardingWindow.contentView = NSHostingView(rootView: Introduction(completionAction: {
+        
+        let visualEffectView = NSVisualEffectView()
+        visualEffectView.material = .underWindowBackground
+        
+        let rootView = Introduction(completionAction: {
             showIntroduction = false
             NSApp.setActivationPolicy(.prohibited)
             onboardingWindow.close()
-        }))
-//        onboardingWindow.titlebarAppearsTransparent = true
-//        onboardingWindow.titleVisibility = .hidden
+        })
+        
+        let hostingView = NSHostingView(rootView: rootView)
+        hostingView.frame = visualEffectView.bounds
+        hostingView.autoresizingMask = [.width, .height]
+        
+        visualEffectView.addSubview(hostingView)
+        
+        onboardingWindow.contentView = visualEffectView
         onboardingWindow.center()
         onboardingWindow.makeKeyAndOrderFront(nil)
         
