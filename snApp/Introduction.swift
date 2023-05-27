@@ -8,6 +8,38 @@
 import SwiftUI
 import AVKit
 
+func showIntroductionView(isPresented: Binding<Bool>) {
+    if isPresented.wrappedValue {
+        let onboardingWindow = NSWindow(
+            contentRect: NSRect(x: 0, y: 0, width: 800, height: 550),
+            styleMask: [.titled],
+            backing: .buffered,
+            defer: false
+        )
+        
+        let visualEffectView = NSVisualEffectView()
+        visualEffectView.material = .underWindowBackground
+        
+        let rootView = Introduction(completionAction: {
+            isPresented.wrappedValue = false
+            NSApp.setActivationPolicy(.prohibited)
+            onboardingWindow.close()
+        })
+        
+        let hostingView = NSHostingView(rootView: rootView)
+        hostingView.frame = visualEffectView.bounds
+        hostingView.autoresizingMask = [.width, .height]
+        
+        visualEffectView.addSubview(hostingView)
+        
+        onboardingWindow.contentView = visualEffectView
+        onboardingWindow.center()
+        onboardingWindow.makeKeyAndOrderFront(nil)
+        
+        NSApp.setActivationPolicy(.regular)
+    }
+}
+
 struct Introduction: View {
     @AppStorage("AppearanceStyle") var appearance: Appearance = .win11
     
@@ -18,7 +50,7 @@ struct Introduction: View {
     @State private var currentPage = 1
     let lastPage = 4
     
-    @State private var snapInstallationStatus = false
+    @AppStorage("SnapInstalled") var snapInstallationStatus = false
     
     var body: some View {
         VStack {
@@ -69,7 +101,7 @@ struct Introduction: View {
                                 .buttonStyle(FrostedButtonStyle(prominence: .increased))
                                 
                                 Button {
-                                    isSnapInstalled()
+                                    refreshInstallationStatus()
                                 } label: {
                                     Image(systemName: "arrow.clockwise")
                                 }
@@ -89,7 +121,7 @@ struct Introduction: View {
                         }
                     }
                     .onAppear {
-                        isSnapInstalled()
+                        refreshInstallationStatus()
                     }
                 }, title: "Complete Set-Up", description: "To use snApp, you need to install the Snap Siri Shortcut. This lets snApp interact with the system to move windows.")
             case 4:
@@ -138,28 +170,9 @@ struct Introduction: View {
         .animation(.default, value: currentPage)
     }
     
-    func isSnapInstalled() -> Void {
-            let task = Process()
-            task.launchPath = "/usr/bin/env"
-            task.arguments = ["shortcuts", "list"]
-            
-            let pipe = Pipe()
-            task.standardOutput = pipe
-            task.launch()
-            
-            let data = pipe.fileHandleForReading.readDataToEndOfFile()
-            if let output = String(data: data, encoding: .utf8) {
-                for i in output.split(separator: "\n") {
-                    if i == "Snap" {
-                        snapInstallationStatus = true
-                        return
-                    }
-                }
-                snapInstallationStatus = false
-            } else {
-                snapInstallationStatus = false
-            }
-        }
+    func refreshInstallationStatus() {
+        snapInstallationStatus = isSnapInstalled()
+    }
     
     func snapShortcut() -> some View {
         VStack(alignment: .leading) {
@@ -208,45 +221,5 @@ struct Introduction: View {
             .padding()
         }
         .transition(.opacity)
-    }
-}
-
-struct FrostedButtonStyle: ButtonStyle {
-    var prominence: Prominence = .standard
-    
-    func makeBody(configuration: Configuration) -> some View {
-        configuration.label
-            .bold()
-            .padding(.horizontal, 15)
-            .padding(.vertical, 10)
-            .foregroundColor(prominence == .increased ? .white : .primary)
-            .background {
-                RoundedRectangle(cornerRadius: 10, style: .continuous)
-                    .fill(prominence == .increased ? Color.accentColor.opacity(configuration.isPressed ? 0.2 : 0.8) : Color.primary.opacity(configuration.isPressed ? 0.5 : 0.2))
-                    .background(.ultraThinMaterial)
-                    .clipShape(RoundedRectangle(cornerRadius: 15, style: .continuous))
-                    .shadow(radius: 0.5)
-            }
-    }
-}
-
-struct VideoLooper: View {
-    var fileName: String
-    var fileExtension: String
-    
-    var body: some View {
-        
-        let player = AVPlayer(url: Bundle.main.url(forResource: fileName, withExtension: fileExtension)!)
-        
-        VideoPlayer(player: player)
-            .onAppear {
-                player.play()
-                NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime, object: nil, queue: nil) { notification in
-                    if let playerItem = notification.object as? AVPlayerItem {
-                        playerItem.seek(to: .zero, completionHandler: nil)
-                        player.play()
-                    }
-                }
-            }
     }
 }

@@ -24,6 +24,7 @@ struct AppearanceSettings: View {
                 }
             }
             .formStyle(.grouped)
+            
             Text("Windows is a trademark of Microsoft Corporation\niPadOS is a trademark of Apple Inc.")
                 .font(.footnote)
                 .foregroundColor(.secondary)

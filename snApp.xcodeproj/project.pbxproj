@@ -11,6 +11,11 @@
 		C25111232A20D1B40051BED0 /* Introduction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25111222A20D1B40051BED0 /* Introduction.swift */; };
 		C25111262A21F5DC0051BED0 /* DarkDemo.mov in Resources */ = {isa = PBXBuildFile; fileRef = C25111252A21F5DC0051BED0 /* DarkDemo.mov */; };
 		C25111282A21F5E00051BED0 /* LightDemo.mov in Resources */ = {isa = PBXBuildFile; fileRef = C25111272A21F5E00051BED0 /* LightDemo.mov */; };
+		C251112A2A221B6B0051BED0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25111292A221B6B0051BED0 /* AppDelegate.swift */; };
+		C251112D2A221CF30051BED0 /* VideoLooper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C251112C2A221CF30051BED0 /* VideoLooper.swift */; };
+		C251112F2A221D110051BED0 /* FrostedButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C251112E2A221D110051BED0 /* FrostedButtonStyle.swift */; };
+		C25111312A2220590051BED0 /* LogInToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25111302A2220590051BED0 /* LogInToggle.swift */; };
+		C25111342A2221970051BED0 /* Position Tiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25111332A2221970051BED0 /* Position Tiles.swift */; };
 		C286714929C55A87003D563A /* ShortcutsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C286714829C55A87003D563A /* ShortcutsHandler.swift */; };
 		C2ADEBEA29A725EF0038DEDB /* SnapInstallationChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2ADEBE929A725EF0038DEDB /* SnapInstallationChecker.swift */; };
 		C2ADEBEC29A72C430038DEDB /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2ADEBEB29A72C430038DEDB /* Settings.swift */; };
@@ -48,6 +53,11 @@
 		C25111222A20D1B40051BED0 /* Introduction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Introduction.swift; sourceTree = "<group>"; };
 		C25111252A21F5DC0051BED0 /* DarkDemo.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = DarkDemo.mov; sourceTree = "<group>"; };
 		C25111272A21F5E00051BED0 /* LightDemo.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = LightDemo.mov; sourceTree = "<group>"; };
+		C25111292A221B6B0051BED0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C251112C2A221CF30051BED0 /* VideoLooper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoLooper.swift; sourceTree = "<group>"; };
+		C251112E2A221D110051BED0 /* FrostedButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrostedButtonStyle.swift; sourceTree = "<group>"; };
+		C25111302A2220590051BED0 /* LogInToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInToggle.swift; sourceTree = "<group>"; };
+		C25111332A2221970051BED0 /* Position Tiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Position Tiles.swift"; sourceTree = "<group>"; };
 		C286714829C55A87003D563A /* ShortcutsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsHandler.swift; sourceTree = "<group>"; };
 		C2ADEBE929A725EF0038DEDB /* SnapInstallationChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapInstallationChecker.swift; sourceTree = "<group>"; };
 		C2ADEBEB29A72C430038DEDB /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
@@ -99,7 +109,6 @@
 				C2ADEBEB29A72C430038DEDB /* Settings.swift */,
 				C2DA3FD9298FB58300DC322E /* GeneralSettings.swift */,
 				C243419529B2037600D14080 /* AppearanceSettings.swift */,
-				C2ADEBE929A725EF0038DEDB /* SnapInstallationChecker.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -112,6 +121,27 @@
 				C25111252A21F5DC0051BED0 /* DarkDemo.mov */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		C251112B2A221CE50051BED0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C251112C2A221CF30051BED0 /* VideoLooper.swift */,
+				C251112E2A221D110051BED0 /* FrostedButtonStyle.swift */,
+				C2ADEBE929A725EF0038DEDB /* SnapInstallationChecker.swift */,
+				C25111302A2220590051BED0 /* LogInToggle.swift */,
+				C286714829C55A87003D563A /* ShortcutsHandler.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C25111322A2221800051BED0 /* MenuBar */ = {
+			isa = PBXGroup;
+			children = (
+				C2DA4002298FB5AE00DC322E /* MenuBar.swift */,
+				C25111332A2221970051BED0 /* Position Tiles.swift */,
+			);
+			path = MenuBar;
 			sourceTree = "<group>";
 		};
 		C2B2790629C56F1500914E63 /* Frameworks */ = {
@@ -148,10 +178,11 @@
 			isa = PBXGroup;
 			children = (
 				C2DA3FD7298FB58300DC322E /* snAppApp.swift */,
+				C25111292A221B6B0051BED0 /* AppDelegate.swift */,
 				C25111222A20D1B40051BED0 /* Introduction.swift */,
+				C251112B2A221CE50051BED0 /* Helpers */,
 				C243419429B2036700D14080 /* Settings */,
-				C2DA4002298FB5AE00DC322E /* MenuBar.swift */,
-				C286714829C55A87003D563A /* ShortcutsHandler.swift */,
+				C25111322A2221800051BED0 /* MenuBar */,
 				C2DA3FE0298FB58400DC322E /* snApp.entitlements */,
 				C2DA3FDD298FB58400DC322E /* Preview Content */,
 			);
@@ -321,12 +352,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C251112F2A221D110051BED0 /* FrostedButtonStyle.swift in Sources */,
 				C2DA3FDA298FB58300DC322E /* GeneralSettings.swift in Sources */,
 				C2ADEBEA29A725EF0038DEDB /* SnapInstallationChecker.swift in Sources */,
+				C25111312A2220590051BED0 /* LogInToggle.swift in Sources */,
 				C243419629B2037600D14080 /* AppearanceSettings.swift in Sources */,
+				C251112A2A221B6B0051BED0 /* AppDelegate.swift in Sources */,
 				C2DA3FD8298FB58300DC322E /* snAppApp.swift in Sources */,
 				C2DA4003298FB5AE00DC322E /* MenuBar.swift in Sources */,
+				C251112D2A221CF30051BED0 /* VideoLooper.swift in Sources */,
 				C286714929C55A87003D563A /* ShortcutsHandler.swift in Sources */,
+				C25111342A2221970051BED0 /* Position Tiles.swift in Sources */,
 				C2ADEBEC29A72C430038DEDB /* Settings.swift in Sources */,
 				C25111232A20D1B40051BED0 /* Introduction.swift in Sources */,
 			);
@@ -502,7 +538,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.itecheverything.snApp;
+				PRODUCT_BUNDLE_IDENTIFIER = org.starlightapps.snApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -533,7 +569,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.itecheverything.snApp;
+				PRODUCT_BUNDLE_IDENTIFIER = org.starlightapps.snApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
