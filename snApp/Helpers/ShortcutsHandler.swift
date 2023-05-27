@@ -78,10 +78,10 @@ func isSnapInstalled() -> Bool {
 func snapTo(position: String) {
     var argument = ""
     // Retrieve the stored SnapMode value from UserDefaults
-    if let storedSnapModeString = UserDefaults.standard.string(forKey: "SnapMode") {
-        if let storedSnapMode = SnapMode(rawValue: storedSnapModeString) {
+    //if let storedSnapModeString = UserDefaults.standard.string(forKey: "SnapMode") {
+       // if let storedSnapMode = SnapMode(rawValue: storedSnapModeString) {
             
-            if storedSnapMode == .snap {
+            if true {
                 //argument = "echo \(position) | shortcuts run Snap"
                 runShortcut(named: "Snap", withInput: position)
                 return
@@ -107,8 +107,8 @@ func snapTo(position: String) {
                 argument = "open -g raycast://extensions/raycast/window-management/\(subdirectory)"
             }
             
-        }
-    }
+       // }
+   // }
     
     
     let task = Process.launchedProcess(launchPath: "/bin/bash", arguments: ["-c", argument])
