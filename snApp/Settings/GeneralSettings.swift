@@ -12,7 +12,7 @@ struct GeneralSettings: View {
     @AppStorage("SnapInstalled") var SnapIsInstalled = false
     @AppStorage("AppHidden") var isAppHidden = false
     
-    @AppStorage("SnapMode") var snapMode :SnapMode = .snap
+    @AppStorage("SnapMode") var snapMode: SnapMode = .snap
     
     @Environment(\.openURL) var openURL
     
