@@ -61,21 +61,6 @@ struct GeneralSettings: View {
                 }
             }
             
-            Section {
-                HStack {
-//                    Button("Snap Website") {
-//                        openURL(URL(string: "https://itecheverything.com/snap")!)
-//                    }
-                    
-                    Spacer()
-                    
-                    Button("Developer's Website") {
-                        openURL(URL(string: "https://starlightapps.org/")!)
-                    }
-                }
-                .buttonStyle(.link)
-            }
-            
         }
         .formStyle(.grouped)
         .sheet(isPresented: $showIntroduction, content: {Introduction(completionAction: {

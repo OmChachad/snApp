@@ -22,8 +22,6 @@ struct snAppApp: App {
     var body: some Scene {
         Settings {
             SettingsView()
-                .frame(minWidth: 350, minHeight: 210)
-                .fixedSize()
         }
         .defaultPosition(.center)
         .onChange(of: appearance) { _ in

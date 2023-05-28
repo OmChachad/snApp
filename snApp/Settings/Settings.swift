@@ -22,7 +22,14 @@ struct SettingsView: View {
                     Label("Appearance", systemImage: "paintbrush.fill")
                 }
                 .tag(2)
+            
+                About()
+                .tabItem {
+                    Label("About", systemImage: "info.circle")
+                }
+                .tag(3)
         }
+            .frame(width: 400, height: 265)
         .animation(.default, value: current)
         .onAppear {
             NSApp.activate(ignoringOtherApps: true)

@@ -17,6 +17,7 @@
 		C25111312A2220590051BED0 /* LogInToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25111302A2220590051BED0 /* LogInToggle.swift */; };
 		C25111342A2221970051BED0 /* Position Tiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25111332A2221970051BED0 /* Position Tiles.swift */; };
 		C25B097C2A235CAB009C8183 /* SVEVideoUI in Frameworks */ = {isa = PBXBuildFile; productRef = C25B097B2A235CAB009C8183 /* SVEVideoUI */; };
+		C25B097E2A23625D009C8183 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25B097D2A23625D009C8183 /* About.swift */; };
 		C286714929C55A87003D563A /* ShortcutsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C286714829C55A87003D563A /* ShortcutsHandler.swift */; };
 		C2ADEBEA29A725EF0038DEDB /* SnapInstallationChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2ADEBE929A725EF0038DEDB /* SnapInstallationChecker.swift */; };
 		C2ADEBEC29A72C430038DEDB /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2ADEBEB29A72C430038DEDB /* Settings.swift */; };
@@ -59,6 +60,7 @@
 		C251112E2A221D110051BED0 /* FrostedButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrostedButtonStyle.swift; sourceTree = "<group>"; };
 		C25111302A2220590051BED0 /* LogInToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInToggle.swift; sourceTree = "<group>"; };
 		C25111332A2221970051BED0 /* Position Tiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Position Tiles.swift"; sourceTree = "<group>"; };
+		C25B097D2A23625D009C8183 /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
 		C286714829C55A87003D563A /* ShortcutsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsHandler.swift; sourceTree = "<group>"; };
 		C2ADEBE929A725EF0038DEDB /* SnapInstallationChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapInstallationChecker.swift; sourceTree = "<group>"; };
 		C2ADEBEB29A72C430038DEDB /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				C2ADEBEB29A72C430038DEDB /* Settings.swift */,
 				C2DA3FD9298FB58300DC322E /* GeneralSettings.swift */,
 				C243419529B2037600D14080 /* AppearanceSettings.swift */,
+				C25B097D2A23625D009C8183 /* About.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C251112F2A221D110051BED0 /* FrostedButtonStyle.swift in Sources */,
+				C25B097E2A23625D009C8183 /* About.swift in Sources */,
 				C2DA3FDA298FB58300DC322E /* GeneralSettings.swift in Sources */,
 				C2ADEBEA29A725EF0038DEDB /* SnapInstallationChecker.swift in Sources */,
 				C25111312A2220590051BED0 /* LogInToggle.swift in Sources */,
