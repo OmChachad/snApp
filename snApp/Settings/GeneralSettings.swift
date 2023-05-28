@@ -12,6 +12,7 @@ struct GeneralSettings: View {
     @AppStorage("SnapMode") var snapMode: SnapMode = .snap
     
     @Environment(\.openURL) var openURL
+    @State private var showIntroduction = false
     
     var body: some View {
         Form {
@@ -52,6 +53,16 @@ struct GeneralSettings: View {
             
             Section {
                 HStack {
+                    Text("Walkthrough")
+                    Spacer()
+                    Button("Start") {
+                        showIntroduction.toggle()
+                    }
+                }
+            }
+            
+            Section {
+                HStack {
 //                    Button("Snap Website") {
 //                        openURL(URL(string: "https://itecheverything.com/snap")!)
 //                    }
@@ -67,6 +78,9 @@ struct GeneralSettings: View {
             
         }
         .formStyle(.grouped)
+        .sheet(isPresented: $showIntroduction, content: {Introduction(completionAction: {
+            showIntroduction.toggle()
+        })})
     }
 }
 
