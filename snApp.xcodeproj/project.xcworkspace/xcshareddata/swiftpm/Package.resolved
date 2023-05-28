@@ -8,6 +8,15 @@
         "revision" : "b8d41bc1c2609c3943c47d00fb539de38f90b817",
         "version" : "1.0.2"
       }
+    },
+    {
+      "identity" : "svevideoui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SergioEstevao/SVEVideoUI.git",
+      "state" : {
+        "revision" : "82c2aff90d9382befe3385f20713c81d5db94c34",
+        "version" : "0.3.2"
+      }
     }
   ],
   "version" : 2

@@ -16,6 +16,7 @@
 		C251112F2A221D110051BED0 /* FrostedButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C251112E2A221D110051BED0 /* FrostedButtonStyle.swift */; };
 		C25111312A2220590051BED0 /* LogInToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25111302A2220590051BED0 /* LogInToggle.swift */; };
 		C25111342A2221970051BED0 /* Position Tiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25111332A2221970051BED0 /* Position Tiles.swift */; };
+		C25B097C2A235CAB009C8183 /* SVEVideoUI in Frameworks */ = {isa = PBXBuildFile; productRef = C25B097B2A235CAB009C8183 /* SVEVideoUI */; };
 		C286714929C55A87003D563A /* ShortcutsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C286714829C55A87003D563A /* ShortcutsHandler.swift */; };
 		C2ADEBEA29A725EF0038DEDB /* SnapInstallationChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2ADEBE929A725EF0038DEDB /* SnapInstallationChecker.swift */; };
 		C2ADEBEC29A72C430038DEDB /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2ADEBEB29A72C430038DEDB /* Settings.swift */; };
@@ -82,6 +83,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2ADEBEF29A7497D0038DEDB /* FluidMenuBarExtra in Frameworks */,
+				C25B097C2A235CAB009C8183 /* SVEVideoUI in Frameworks */,
 				C2B2790929C56F7000914E63 /* ScriptingBridge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,6 +234,7 @@
 			name = snApp;
 			packageProductDependencies = (
 				C2ADEBEE29A7497D0038DEDB /* FluidMenuBarExtra */,
+				C25B097B2A235CAB009C8183 /* SVEVideoUI */,
 			);
 			productName = snApp;
 			productReference = C2DA3FD4298FB58300DC322E /* snApp.app */;
@@ -307,6 +310,7 @@
 			mainGroup = C2DA3FCB298FB58300DC322E;
 			packageReferences = (
 				C2ADEBED29A7497D0038DEDB /* XCRemoteSwiftPackageReference "fluid-menu-bar-extra" */,
+				C25B097A2A235CAB009C8183 /* XCRemoteSwiftPackageReference "SVEVideoUI" */,
 			);
 			productRefGroup = C2DA3FD5298FB58300DC322E /* Products */;
 			projectDirPath = "";
@@ -523,7 +527,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"snApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 3S6NT5MUQZ;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -556,7 +560,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"snApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 3S6NT5MUQZ;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -694,6 +698,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		C25B097A2A235CAB009C8183 /* XCRemoteSwiftPackageReference "SVEVideoUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SergioEstevao/SVEVideoUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.2;
+			};
+		};
 		C2ADEBED29A7497D0038DEDB /* XCRemoteSwiftPackageReference "fluid-menu-bar-extra" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/lfroms/fluid-menu-bar-extra.git";
@@ -705,6 +717,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C25B097B2A235CAB009C8183 /* SVEVideoUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C25B097A2A235CAB009C8183 /* XCRemoteSwiftPackageReference "SVEVideoUI" */;
+			productName = SVEVideoUI;
+		};
 		C2ADEBEE29A7497D0038DEDB /* FluidMenuBarExtra */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C2ADEBED29A7497D0038DEDB /* XCRemoteSwiftPackageReference "fluid-menu-bar-extra" */;
