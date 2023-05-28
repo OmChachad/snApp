@@ -26,7 +26,7 @@ struct SnapInstallationChecker: View {
                 
                 HStack {
                     Button("Install Snap") {
-                        openURL(URL(string: "https://www.itecheverything.com/snap")!)
+                        openURL(URL(string: snapLink)!)
                     }
                     .buttonStyle(.borderedProminent)
                     

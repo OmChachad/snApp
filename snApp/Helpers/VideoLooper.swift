@@ -6,25 +6,21 @@
 //
 
 import SwiftUI
-import AVKit
+import SVEVideoUI
 
 struct VideoLooper: View {
     var fileName: String
     var fileExtension: String
     
+    @State private var isPlaying = true
     var body: some View {
+        let url = Bundle.main.url(forResource: fileName, withExtension: fileExtension)!
         
-        let player = AVPlayer(url: Bundle.main.url(forResource: fileName, withExtension: fileExtension)!)
+        Video(url: url, playing: $isPlaying)
+            .playbackControls(false)
         
-        VideoPlayer(player: player)
-            .onAppear {
-                player.play()
-                NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime, object: nil, queue: nil) { notification in
-                    if let playerItem = notification.object as? AVPlayerItem {
-                        playerItem.seek(to: .zero, completionHandler: nil)
-                        player.play()
-                    }
-                }
+            .onChange(of: isPlaying) { newValue in
+                isPlaying = true
             }
     }
 }

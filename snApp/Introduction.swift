@@ -8,6 +8,8 @@
 import SwiftUI
 import AVKit
 
+let snapLink = "https://www.icloud.com/shortcuts/4160aa6b58554e95a39cfeac67bd876a"
+
 func showIntroductionView(isPresented: Binding<Bool>) {
     if isPresented.wrappedValue {
         let onboardingWindow = NSWindow(
@@ -39,6 +41,7 @@ func showIntroductionView(isPresented: Binding<Bool>) {
         NSApp.setActivationPolicy(.regular)
     }
 }
+
 
 struct Introduction: View {
     @AppStorage("AppearanceStyle") var appearance: Appearance = .win11
@@ -88,7 +91,7 @@ struct Introduction: View {
                 onboardingTemplate(media: {
                     VStack {
                         Button {
-                            openURL(URL(string: "https://www.itecheverything.com/snap")!)
+                            openURL(URL(string: snapLink)!)
                         } label: {
                             snapShortcut()
                         }
@@ -96,7 +99,7 @@ struct Introduction: View {
                         if !snapInstallationStatus {
                             HStack {
                                 Button("Install Siri Shortcut") {
-                                    openURL(URL(string: "https://www.itecheverything.com/snap")!)
+                                    openURL(URL(string: snapLink)!)
                                 }
                                 .buttonStyle(FrostedButtonStyle(prominence: .increased))
                                 
@@ -168,6 +171,7 @@ struct Introduction: View {
         .padding()
         .padding(.horizontal, 30)
         .animation(.default, value: currentPage)
+        .frame(width: 800, height: 550)
     }
     
     func refreshInstallationStatus() {
