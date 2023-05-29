@@ -10,6 +10,7 @@ import SwiftUI
 struct GeneralSettings: View {
     @AppStorage("SnapInstalled") var SnapIsInstalled = false
     @AppStorage("SnapMode") var snapMode: SnapMode = .snap
+    @AppStorage("showSettingsButton") var showSettingsButton = true
     
     @Environment(\.openURL) var openURL
     @State private var showIntroduction = false
@@ -40,6 +41,19 @@ struct GeneralSettings: View {
                 if SnapIsInstalled == true {
                     LogInToggle()
                 }
+            }
+            
+            Section {
+                VStack(alignment: .leading) {
+                    Toggle("Show Settings Button", isOn: $showSettingsButton)
+                        .toggleStyle(.switch)
+                    Text("Disabling this will hide the \(Image(systemName: "gear")) icon at the top left of the Menu Bar window. You can still access Settings when the Menu Bar window is open, by holding down ⌥ or pressing ⌘,")
+                        .foregroundColor(.secondary)
+                        .font(.callout)
+                        .padding(.trailing, 40)
+                }
+            } footer: {
+                
             }
             
             if false {

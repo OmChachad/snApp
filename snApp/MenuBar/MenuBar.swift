@@ -9,12 +9,13 @@ import SwiftUI
 import ScriptingBridge
 
 struct MenuBar: View {
-    @State private var isOptionKeyPressed = false
+    @State private var showingOptionsMenu = false
     @AppStorage("SnapInstalled") var snapInstallationStatus = false
     @Environment(\.openURL) var openURL
     @AppStorage("AppHidden") var isAppHidden = false
     @Environment(\.openWindow) var openWindow
     @AppStorage("AppearanceStyle") var appearance: Appearance = .win11
+    @AppStorage("showSettingsButton") var showSettingsButton = true
     
     var body: some View {
         VStack(spacing: 0) {
@@ -25,7 +26,7 @@ struct MenuBar: View {
                 Button("Open Settings") {
                     NSApp.sendAction(Selector(("showSettingsWindow:")), to: nil, from: nil)
                 }
-            } else if isOptionKeyPressed {
+            } else if showingOptionsMenu {
                 VStack(spacing: 10) {
                     Button("Open Settings") {
                         NSApp.sendAction(Selector(("showSettingsWindow:")), to: nil, from: nil)
@@ -53,23 +54,48 @@ struct MenuBar: View {
             }
             
         }
+        .padding(showSettingsButton ? 7.5 : 0)
         .padding(10)
         .padding(.horizontal, 2.5)
         .onChange(of: NSEvent.modifierFlags) { newValue in
             print(newValue)
             if newValue.contains(.option) {
-                isOptionKeyPressed = true
+                showingOptionsMenu = true
             } else {
-                isOptionKeyPressed = false
+                showingOptionsMenu = false
             }
         }
-        .animation(.default, value: isOptionKeyPressed)
+        .animation(.default, value: showingOptionsMenu)
         .onAppear(perform: {
             NSEvent.addLocalMonitorForEvents(matching: .flagsChanged) { event in
-                self.isOptionKeyPressed = event.modifierFlags.contains(.option)
+                self.showingOptionsMenu = event.modifierFlags.contains(.option)
                 return event
             }
         })
+        .overlay(alignment: .topLeading) {
+            if showSettingsButton || showingOptionsMenu {
+                Button {
+                    showingOptionsMenu.toggle()
+                } label: {
+                    if !showingOptionsMenu {
+                        Image(systemName: "gear")
+                            .foregroundColor(.secondary)
+                            .imageScale(.medium)
+                    } else {
+                        Image(systemName: "chevron.left")
+                            .foregroundColor(.secondary)
+                            .imageScale(.large)
+                            .padding(2)
+                            .background {
+                                RoundedRectangle(cornerRadius: 5)
+                                    .foregroundColor(.secondary.opacity(0.4))
+                            }
+                    }
+                }
+                .padding(5)
+                .buttonStyle(.borderless)
+            }
+        }
     }
     
     func iPadStyle() -> some View {
