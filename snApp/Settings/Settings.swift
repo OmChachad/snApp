@@ -29,10 +29,13 @@ struct SettingsView: View {
                 }
                 .tag(3)
         }
-            .frame(width: 400, height: 265)
+        .frame(width: 400, height: 350)
         .animation(.default, value: current)
         .onAppear {
             NSApp.activate(ignoringOtherApps: true)
+            for window in NSApplication.shared.windows {
+                    window.level = .floating
+                }
         }
     }
 }
