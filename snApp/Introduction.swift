@@ -39,6 +39,11 @@ func showIntroductionView(isPresented: Binding<Bool>) {
         onboardingWindow.makeKeyAndOrderFront(nil)
         
         NSApp.setActivationPolicy(.regular)
+        NSApp.activate(ignoringOtherApps: true)
+        NSApp.keyWindow?.orderFrontRegardless()
+        for window in NSApplication.shared.windows {
+                window.level = .floating
+            }
     }
 }
 
