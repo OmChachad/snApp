@@ -19,7 +19,9 @@ struct MenuBar: View {
     var body: some View {
         VStack(spacing: 0) {
             if snapInstallationStatus == false {
-                SnapInstallationChecker()
+                VStack {
+                    SnapInstallationChecker()
+                }
                 Button("Open Settings") {
                     NSApp.sendAction(Selector(("showSettingsWindow:")), to: nil, from: nil)
                 }

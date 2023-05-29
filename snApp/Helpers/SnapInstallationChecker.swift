@@ -14,7 +14,7 @@ struct SnapInstallationChecker: View {
     @Namespace var nm
     
     var body: some View {
-        VStack {
+        Group {
             if !snapIsInstalled {
                 Label {
                     Text("Snap Shortcut Is Not Installed")
@@ -38,6 +38,7 @@ struct SnapInstallationChecker: View {
                         Image(systemName: "arrow.clockwise")
                     }
                 }
+                .padding(.vertical, 5)
             } else {
                 Label {
                     Text("Shortcut Is Installed")

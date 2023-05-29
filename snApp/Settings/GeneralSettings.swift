@@ -18,7 +18,9 @@ struct GeneralSettings: View {
         Form {
             Section {
                 HStack {
-                    SnapInstallationChecker(snapIsInstalled: SnapIsInstalled)
+                    HStack(spacing: 85) {
+                        SnapInstallationChecker(snapIsInstalled: SnapIsInstalled)
+                    }
                     
                     if SnapIsInstalled {
                         Spacer()

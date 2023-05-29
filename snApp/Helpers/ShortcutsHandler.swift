@@ -37,6 +37,7 @@ func runShortcut(named shortcut: String, withInput: String?) {
         
         _ = shortcut.run?(withInput: withInput)
     }
+    refreshInstallationStatus()
 }
 
 //func isShortcutInstalled(withName shortcut: String) -> Bool {
@@ -117,8 +118,13 @@ func snapTo(position: String) {
         try task.run()
         task.waitUntilExit()
     } catch {
-        withAnimation {
-            UserDefaults.standard.set(isSnapInstalled(), forKey: "SnapInstalled")
-        }
+        refreshInstallationStatus()
+    }
+}
+
+func refreshInstallationStatus() {
+    withAnimation {
+        print("Hi")
+        UserDefaults.standard.set(isSnapInstalled(), forKey: "SnapInstalled")
     }
 }
