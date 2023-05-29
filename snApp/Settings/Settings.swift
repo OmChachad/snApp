@@ -33,9 +33,6 @@ struct SettingsView: View {
         .animation(.default, value: current)
         .onAppear {
             NSApp.activate(ignoringOtherApps: true)
-            for window in NSApplication.shared.windows {
-                    window.level = .floating
-                }
         }
     }
 }
