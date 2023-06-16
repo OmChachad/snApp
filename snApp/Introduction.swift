@@ -56,7 +56,7 @@ struct Introduction: View {
     let completionAction: () -> Void
     
     @State private var currentPage = 1
-    let lastPage = 4
+    let lastPage = 3
     
     @AppStorage("SnapInstalled") var snapInstallationStatus = false
     
@@ -132,13 +132,13 @@ struct Introduction: View {
                         refreshInstallationStatus()
                     }
                 }, title: "Complete Set-Up", description: "To use snApp, you need to install the Snap Siri Shortcut. This lets snApp interact with the system to move windows.")
-            case 4:
-                onboardingTemplate(media: {
-                    imageView("Intro 2")
-                }, title: "Open Settings", description: """
-                                           You can hold down the ⌥ key, to open snApp Settings or close the app.
-                                           ⌘, can also be used to open Settings directly.
-                                           """)
+//            case 4:
+//                onboardingTemplate(media: {
+//                    imageView("Intro 2")
+//                }, title: "Open Settings", description: """
+//                                           You can hold down the ⌥ key, to open snApp Settings or close the app.
+//                                           ⌘, can also be used to open Settings directly.
+//                                           """)
             default:
                 EmptyView()
             }
