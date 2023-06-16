@@ -111,6 +111,7 @@ func iPadStyle() -> some View {
                     middleThird()
                         .scaledToFit()
                         .frame(width: 25, height: 25)
+                        .contentShape(Rectangle())
                 }
                 iPadButton(systemName: "rectangle.trailinghalf.inset.filled", position: "Right Half")
                 iPadButton(systemName: "rectangle.trailingthird.inset.filled", position: "Right Third")
@@ -142,6 +143,7 @@ func iPadStyle() -> some View {
                     leftTwoThird()
                         .scaledToFit()
                         .frame(width: 25, height: 25)
+                        .contentShape(Rectangle())
                 }
                 
                 Button {
@@ -150,6 +152,7 @@ func iPadStyle() -> some View {
                     rightTwoThird()
                         .scaledToFit()
                         .frame(width: 25, height: 25)
+                        .contentShape(Rectangle())
                 }
             }
         }
@@ -166,6 +169,7 @@ private func iPadButton(systemName: String, position: String) -> some View {
         snapTo(position: position)
     } label: {
         Image(systemName: systemName)
+            .contentShape(Rectangle())
     }
 }
 
