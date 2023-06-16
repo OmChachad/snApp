@@ -40,14 +40,14 @@ struct AppearanceSettings: View {
                         }
                         .clipped()
                         .allowsHitTesting(false)
-                        .frame(width: appearance == .win11 ? 255 : 240, height: appearance == .win11 ? 120 : 55)
+                        .frame(width: appearance == .win11 ? 255 : 280, height: appearance == .win11 ? 120 : 55)
                         .padding(10)
                         .background {
-                            RoundedRectangle(cornerRadius: 15, style: .continuous)
+                            RoundedRectangle(cornerRadius: 10, style: .continuous)
                                 .fill(.primary.opacity(0.2))
                                 .background(.ultraThinMaterial)
                         }
-                        .cornerRadius(15)
+                        .cornerRadius(10)
                         .shadow(radius: 1)
                         .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
                         
