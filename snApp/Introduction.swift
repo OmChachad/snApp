@@ -232,3 +232,9 @@ struct Introduction: View {
         .transition(.opacity)
     }
 }
+
+struct Introduction_Preview: PreviewProvider {
+    static var previews: some View {
+        Introduction(completionAction: {})
+    }
+}
