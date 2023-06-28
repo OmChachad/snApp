@@ -31,11 +31,7 @@ struct About: View {
             }
             
             Section("Get in touch") {
-                HStack {
-                    Text("Email")
-                    Spacer()
-                    Text("contact@starlightapps.org")
-                        .foregroundColor(.secondary)
+                LabeledContent("Email") { Text("contact@starlightapps.org")
                 }
             }
             Section {
