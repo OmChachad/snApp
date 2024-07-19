@@ -43,7 +43,7 @@ struct About: View {
                     Spacer()
                     
                     Button("Privacy Policy") {
-                        openURL(URL(string: "https://www.termsfeed.com/live/49764ecc-6071-4b1a-a4d7-75374deb7052")!)
+                        openURL(URL(string: "http://starlightapps.org/privacy-policy")!)
                     }
                 }
                 .buttonStyle(.link)
