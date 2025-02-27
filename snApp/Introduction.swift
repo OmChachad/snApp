@@ -72,7 +72,7 @@ struct Introduction: View {
                                             .aspectRatio(1370/700, contentMode: .fit)
                                             .clipShape(RoundedRectangle(cornerRadius: 15, style: .continuous))
                                             .shadow(radius: 10)
-                }, title: "Welcome to snApp.", description: "Snap, the award winning Siri Shortcut, for incredible window management on macOS, is now available as an app. Quickly re-size and re-arrange windows however you like, inspired by Snap Layouts on Windows.")
+                }, title: "Welcome to snApp.", description: "Snap, the award-winning Siri Shortcut for incredible window management on macOS, is now available as an app. Quickly re-size and re-arrange windows however you like, inspired by Snap Layouts on Windows.")
             case 2:
                 onboardingTemplate(media: {
                     VStack {
