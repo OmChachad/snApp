@@ -8,7 +8,7 @@
 import SwiftUI
 import AVKit
 
-let snapLink = "https://www.icloud.com/shortcuts/6e9ac882bad94858bb595e8bd8a28bc4"
+let snapShortcut = SiriShortcut(name: "Snap", urlString: "https://www.icloud.com/shortcuts/6e9ac882bad94858bb595e8bd8a28bc4", versionNumber: 3.0)
 
 func showIntroductionView(isPresented: Binding<Bool>) {
     if isPresented.wrappedValue {
@@ -96,15 +96,16 @@ struct Introduction: View {
                 onboardingTemplate(media: {
                     VStack {
                         Button {
-                            openURL(URL(string: snapLink)!)
+                            openURL(snApp.snapShortcut.url)
                         } label: {
                             snapShortcut()
                         }
                         .buttonStyle(.plain)
+                        
                         if !snapInstallationStatus {
                             HStack {
                                 Button("Install Siri Shortcut") {
-                                    openURL(URL(string: snapLink)!)
+                                    openURL(snApp.snapShortcut.url)
                                 }
                                 .buttonStyle(FrostedButtonStyle(prominence: .increased))
                                 

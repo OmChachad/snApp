@@ -19,7 +19,7 @@ struct MenuBar: View {
     
     var body: some View {
         VStack(spacing: 0) {
-            if snapInstallationStatus == false {
+            if snapInstallationStatus == false || !isSnapUpdated() {
                 VStack {
                     SnapInstallationChecker()
                 }

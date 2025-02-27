@@ -15,9 +15,13 @@ struct SnapInstallationChecker: View {
     
     var body: some View {
         Group {
-            if !snapIsInstalled {
+            if !snapIsInstalled || !isSnapUpdated() {
                 Label {
-                    Text("Snap Shortcut Is Not Installed")
+                    if snapIsInstalled {
+                        Text("Siri Shortcut Update is available.")
+                    } else {
+                        Text("Snap Shortcut Is Not Installed")
+                    }
                 } icon: {
                     Image(systemName: "exclamationmark.triangle.fill")
                         .foregroundColor(.red)
@@ -25,8 +29,8 @@ struct SnapInstallationChecker: View {
                 .matchedGeometryEffect(id: "Install Status", in: nm)
                 
                 HStack {
-                    Button("Install Snap") {
-                        openURL(URL(string: snapLink)!)
+                    Button("\(snapIsInstalled ? "Update" : "Install") Snap") {
+                        openURL(snapShortcut.url)
                     }
                     .buttonStyle(.borderedProminent)
                     

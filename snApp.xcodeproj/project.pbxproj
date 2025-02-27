@@ -19,6 +19,7 @@
 		C25B097C2A235CAB009C8183 /* SVEVideoUI in Frameworks */ = {isa = PBXBuildFile; productRef = C25B097B2A235CAB009C8183 /* SVEVideoUI */; };
 		C25B097E2A23625D009C8183 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25B097D2A23625D009C8183 /* About.swift */; };
 		C286714929C55A87003D563A /* ShortcutsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C286714829C55A87003D563A /* ShortcutsHandler.swift */; };
+		C2A85D5A2D70540E00919C5E /* SiriShortcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A85D592D70540E00919C5E /* SiriShortcut.swift */; };
 		C2ADEBEA29A725EF0038DEDB /* SnapInstallationChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2ADEBE929A725EF0038DEDB /* SnapInstallationChecker.swift */; };
 		C2ADEBEC29A72C430038DEDB /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2ADEBEB29A72C430038DEDB /* Settings.swift */; };
 		C2ADEBEF29A7497D0038DEDB /* FluidMenuBarExtra in Frameworks */ = {isa = PBXBuildFile; productRef = C2ADEBEE29A7497D0038DEDB /* FluidMenuBarExtra */; };
@@ -62,6 +63,7 @@
 		C25111332A2221970051BED0 /* Position Tiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Position Tiles.swift"; sourceTree = "<group>"; };
 		C25B097D2A23625D009C8183 /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
 		C286714829C55A87003D563A /* ShortcutsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsHandler.swift; sourceTree = "<group>"; };
+		C2A85D592D70540E00919C5E /* SiriShortcut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriShortcut.swift; sourceTree = "<group>"; };
 		C2ADEBE929A725EF0038DEDB /* SnapInstallationChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapInstallationChecker.swift; sourceTree = "<group>"; };
 		C2ADEBEB29A72C430038DEDB /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		C2B2790729C56F1500914E63 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
@@ -136,6 +138,7 @@
 				C2ADEBE929A725EF0038DEDB /* SnapInstallationChecker.swift */,
 				C25111302A2220590051BED0 /* LogInToggle.swift */,
 				C286714829C55A87003D563A /* ShortcutsHandler.swift */,
+				C2A85D592D70540E00919C5E /* SiriShortcut.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				C243419629B2037600D14080 /* AppearanceSettings.swift in Sources */,
 				C251112A2A221B6B0051BED0 /* AppDelegate.swift in Sources */,
 				C2DA3FD8298FB58300DC322E /* snAppApp.swift in Sources */,
+				C2A85D5A2D70540E00919C5E /* SiriShortcut.swift in Sources */,
 				C2DA4003298FB5AE00DC322E /* MenuBar.swift in Sources */,
 				C251112D2A221CF30051BED0 /* VideoLooper.swift in Sources */,
 				C286714929C55A87003D563A /* ShortcutsHandler.swift in Sources */,

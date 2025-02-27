@@ -67,6 +67,7 @@ func isSnapInstalled() -> Bool {
     if let output = String(data: data, encoding: .utf8) {
         for i in output.split(separator: "\n") {
             if i == "Snap" {
+                UserDefaults.standard.set(true, forKey: "SnapInstalled")
                 return true
             }
         }
@@ -74,6 +75,14 @@ func isSnapInstalled() -> Bool {
     } else {
         return false
     }
+}
+
+func updateShortcutVersionNumber() {
+    UserDefaults.standard.set(snapShortcut.versionNumber, forKey: "ShortcutVersion")
+}
+
+func isSnapUpdated() -> Bool {
+    UserDefaults.standard.double(forKey: "ShortcutVersion") == snapShortcut.versionNumber
 }
 
 func snapTo(position: String) {
