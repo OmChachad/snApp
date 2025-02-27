@@ -8,7 +8,7 @@
 import SwiftUI
 import AVKit
 
-let snapLink = "https://www.icloud.com/shortcuts/4160aa6b58554e95a39cfeac67bd876a"
+let snapLink = "https://www.icloud.com/shortcuts/6e9ac882bad94858bb595e8bd8a28bc4"
 
 func showIntroductionView(isPresented: Binding<Bool>) {
     if isPresented.wrappedValue {
