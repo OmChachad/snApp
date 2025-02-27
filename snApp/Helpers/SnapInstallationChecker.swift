@@ -19,7 +19,7 @@ struct SnapInstallationChecker: View {
                 Label {
                     Text("Snap Shortcut Is Not Installed")
                 } icon: {
-                    Image(systemName: "xmark.circle.fill")
+                    Image(systemName: "exclamationmark.triangle.fill")
                         .foregroundColor(.red)
                 }
                 .matchedGeometryEffect(id: "Install Status", in: nm)
