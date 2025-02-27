@@ -23,14 +23,26 @@ struct MenuBar: View {
                 VStack {
                     SnapInstallationChecker()
                 }
-                Button("Open Settings") {
-                    NSApp.sendAction(Selector(("showSettingsWindow:")), to: nil, from: nil)
+                
+                if #available(macOS 14.0, *) {
+                    SettingsLink {
+                        Text("Open Settings")
+                    }
+                } else {
+                    Button("Open Settings") {
+                        NSApp.sendAction(Selector(("showSettingsWindow:")), to: nil, from: nil)
+                    }
                 }
             } else if showingOptionsMenu {
                 VStack(spacing: 10) {
-                    Button("Open Settings") {
-                        NSApp.sendAction(Selector(("showSettingsWindow:")), to: nil, from: nil)
-                        NSApp.activate(ignoringOtherApps: true)
+                    if #available(macOS 14.0, *) {
+                        SettingsLink {
+                            Text("Open Settings")
+                        }
+                    } else {
+                        Button("Open Settings") {
+                            NSApp.sendAction(Selector(("showSettingsWindow:")), to: nil, from: nil)
+                        }
                     }
                     
                     Button("Quit App") {
