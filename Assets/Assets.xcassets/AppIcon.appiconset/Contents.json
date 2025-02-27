@@ -1,61 +1,61 @@
 {
   "images" : [
     {
-      "filename" : "snAppSmall16.png",
+      "filename" : "macOS@3x 2.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "16x16"
     },
     {
-      "filename" : "snAppSmall32 1.png",
+      "filename" : "macOS@2x 3.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "16x16"
     },
     {
-      "filename" : "snAppSmall32.png",
+      "filename" : "macOS@2x 2.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "32x32"
     },
     {
-      "filename" : "snAppSmall64.png",
+      "filename" : "macOS@2x-2.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "32x32"
     },
     {
-      "filename" : "snApp128.png",
+      "filename" : "macOS@2x-1.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "128x128"
     },
     {
-      "filename" : "snApp256.png",
+      "filename" : "macOS@3x 1.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "128x128"
     },
     {
-      "filename" : "snApp256 1.png",
+      "filename" : "macOS@3x.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "256x256"
     },
     {
-      "filename" : "snApp512.png",
+      "filename" : "macOS@2x 1.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "256x256"
     },
     {
-      "filename" : "snApp512 1.png",
+      "filename" : "macOS@2x.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "512x512"
     },
     {
-      "filename" : "snApp1024.png",
+      "filename" : "macOS.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "512x512"
