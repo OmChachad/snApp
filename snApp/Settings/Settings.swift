@@ -17,19 +17,26 @@ struct SettingsView: View {
                 }
                 .tag(1)
             
-                AppearanceSettings()
+            AppearanceSettings()
                 .tabItem {
                     Label("Appearance", systemImage: "paintbrush.fill")
                 }
                 .tag(2)
             
-                About()
+            TipJar()
+                .environmentObject(Store())
+                .tabItem {
+                    Label("Tip Jar", systemImage: "heart.fill")
+                }
+                .tag(3)
+            
+            About()
                 .tabItem {
                     Label("About", systemImage: "info.circle")
                 }
-                .tag(3)
+                .tag(4)
         }
-        .frame(width: 400, height: 350)
+        .frame(width: 400, height: current == 3 ? 500 : 350)
         .animation(.default, value: current)
         .onAppear {
             NSApp.activate(ignoringOtherApps: true)
