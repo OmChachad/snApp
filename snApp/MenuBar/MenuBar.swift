@@ -17,6 +17,8 @@ struct MenuBar: View {
     @AppStorage("AppearanceStyle") var appearance: Appearance = .win11
     @AppStorage("showSettingsButton") var showSettingsButton = true
     
+    @State private var showTipJar = false
+    
     var body: some View {
         VStack(spacing: 0) {
             if snapInstallationStatus == false || !isSnapUpdated() {
@@ -104,6 +106,33 @@ struct MenuBar: View {
                 }
                 .padding(5)
                 .buttonStyle(.borderless)
+            }
+        }
+        .overlay(alignment: .topTrailing) {
+            if showSettingsButton {
+                Button {
+                    showTipJar.toggle()
+                } label: {
+                    Image(systemName: "heart.fill")
+                        .foregroundColor(.pink)
+                        .imageScale(.medium)
+                }
+                .padding(5)
+                .buttonStyle(.borderless)
+                .sheet(isPresented: $showTipJar) {
+                    TipJar()
+                        .ultraThinPresentationBackground()
+                        .environmentObject(Store())
+                        .safeAreaInset(edge: .bottom) {
+                            Button("Close") {
+                                showTipJar.toggle()
+                            }
+                            .buttonStyle(.borderedProminent)
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(.ultraThinMaterial)
+                        }
+                }
             }
         }
     }

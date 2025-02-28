@@ -13,6 +13,7 @@
 		C23D40FA2D720CED009C17B0 /* Local Tips.storekit in Resources */ = {isa = PBXBuildFile; fileRef = C23D40F52D720CED009C17B0 /* Local Tips.storekit */; };
 		C23D40FC2D720D03009C17B0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23D40FB2D720D03009C17B0 /* StoreKit.framework */; };
 		C23D40FE2D720D62009C17B0 /* TipJar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23D40FD2D720D62009C17B0 /* TipJar.swift */; };
+		C23D41002D72126A009C17B0 /* ultraThinPresentationBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23D40FF2D72126A009C17B0 /* ultraThinPresentationBackground.swift */; };
 		C243419629B2037600D14080 /* AppearanceSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C243419529B2037600D14080 /* AppearanceSettings.swift */; };
 		C25111232A20D1B40051BED0 /* Introduction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25111222A20D1B40051BED0 /* Introduction.swift */; };
 		C25111262A21F5DC0051BED0 /* DarkDemo.mov in Resources */ = {isa = PBXBuildFile; fileRef = C25111252A21F5DC0051BED0 /* DarkDemo.mov */; };
@@ -64,6 +65,7 @@
 		C23D40F52D720CED009C17B0 /* Local Tips.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Local Tips.storekit"; sourceTree = "<group>"; };
 		C23D40FB2D720D03009C17B0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		C23D40FD2D720D62009C17B0 /* TipJar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipJar.swift; sourceTree = "<group>"; };
+		C23D40FF2D72126A009C17B0 /* ultraThinPresentationBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ultraThinPresentationBackground.swift; sourceTree = "<group>"; };
 		C243419529B2037600D14080 /* AppearanceSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceSettings.swift; sourceTree = "<group>"; };
 		C25111222A20D1B40051BED0 /* Introduction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Introduction.swift; sourceTree = "<group>"; };
 		C25111252A21F5DC0051BED0 /* DarkDemo.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = DarkDemo.mov; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				C25111302A2220590051BED0 /* LogInToggle.swift */,
 				C286714829C55A87003D563A /* ShortcutsHandler.swift */,
 				C2A85D592D70540E00919C5E /* SiriShortcut.swift */,
+				C23D40FF2D72126A009C17B0 /* ultraThinPresentationBackground.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 				C286714929C55A87003D563A /* ShortcutsHandler.swift in Sources */,
 				C25111342A2221970051BED0 /* Position Tiles.swift in Sources */,
 				C2ADEBEC29A72C430038DEDB /* Settings.swift in Sources */,
+				C23D41002D72126A009C17B0 /* ultraThinPresentationBackground.swift in Sources */,
 				C23D40FE2D720D62009C17B0 /* TipJar.swift in Sources */,
 				C25111232A20D1B40051BED0 /* Introduction.swift in Sources */,
 			);
