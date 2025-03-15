@@ -9,79 +9,18 @@
       }
     ]
   },
-  "identifier" : "83267910",
+  "identifier" : "967CB09F",
   "nonRenewingSubscriptions" : [
 
   ],
   "products" : [
-    {
-      "displayPrice" : "0.99",
-      "familyShareable" : false,
-      "internalID" : "6451053813",
-      "localizations" : [
-        {
-          "description" : "Let the developer know you love the app!",
-          "displayName" : "Appreciation",
-          "locale" : "en_US"
-        }
-      ],
-      "productID" : "Tip1",
-      "referenceName" : "Appreciation",
-      "type" : "NonConsumable"
-    },
-    {
-      "displayPrice" : "4.99",
-      "familyShareable" : false,
-      "internalID" : "6451053753",
-      "localizations" : [
-        {
-          "description" : "Show your gratitude with a thoughtful token!",
-          "displayName" : "Heartfelt Gift",
-          "locale" : "en_US"
-        }
-      ],
-      "productID" : "Tip2",
-      "referenceName" : "Heartfelt Gift",
-      "type" : "NonConsumable"
-    },
-    {
-      "displayPrice" : "9.99",
-      "familyShareable" : false,
-      "internalID" : "6451053861",
-      "localizations" : [
-        {
-          "description" : "Make a meaningful impact to the developer!",
-          "displayName" : "Impactful Gesture",
-          "locale" : "en_US"
-        }
-      ],
-      "productID" : "Tip3",
-      "referenceName" : "Impactful Gesture",
-      "type" : "NonConsumable"
-    },
-    {
-      "displayPrice" : "19.99",
-      "familyShareable" : false,
-      "internalID" : "6451053885",
-      "localizations" : [
-        {
-          "description" : "Supercharge the developer's efforts!",
-          "displayName" : "Mega Support",
-          "locale" : "en_US"
-        }
-      ],
-      "productID" : "Tip4",
-      "referenceName" : "Mega Support",
-      "type" : "NonConsumable"
-    }
+
   ],
   "settings" : {
-    "_applicationInternalID" : "6449708232",
+    "_applicationInternalID" : "6449620109",
     "_developerTeamID" : "3S6NT5MUQZ",
     "_failTransactionsEnabled" : false,
-    "_lastSynchronizedDate" : 762449215.42096496,
-    "_locale" : "en_US",
-    "_storefront" : "USA",
+    "_lastSynchronizedDate" : 763494038.03870904,
     "_storeKitErrors" : [
       {
         "current" : null,

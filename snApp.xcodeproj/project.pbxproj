@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C23D40F72D720CED009C17B0 /* StoreKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23D40F22D720CED009C17B0 /* StoreKitManager.swift */; };
-		C23D40F82D720CED009C17B0 /* Synced Tips.storekit in Resources */ = {isa = PBXBuildFile; fileRef = C23D40F42D720CED009C17B0 /* Synced Tips.storekit */; };
 		C23D40F92D720CED009C17B0 /* Tips.plist in Resources */ = {isa = PBXBuildFile; fileRef = C23D40F32D720CED009C17B0 /* Tips.plist */; };
 		C23D40FA2D720CED009C17B0 /* Local Tips.storekit in Resources */ = {isa = PBXBuildFile; fileRef = C23D40F52D720CED009C17B0 /* Local Tips.storekit */; };
 		C23D40FC2D720D03009C17B0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23D40FB2D720D03009C17B0 /* StoreKit.framework */; };
@@ -31,6 +30,7 @@
 		C2ADEBEC29A72C430038DEDB /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2ADEBEB29A72C430038DEDB /* Settings.swift */; };
 		C2ADEBEF29A7497D0038DEDB /* FluidMenuBarExtra in Frameworks */ = {isa = PBXBuildFile; productRef = C2ADEBEE29A7497D0038DEDB /* FluidMenuBarExtra */; };
 		C2B2790929C56F7000914E63 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2B2790729C56F1500914E63 /* ScriptingBridge.framework */; };
+		C2CCDC942D76AE9200D91A08 /* Synced Tips.storekit in Resources */ = {isa = PBXBuildFile; fileRef = C2CCDC932D76AE9200D91A08 /* Synced Tips.storekit */; };
 		C2DA3FD8298FB58300DC322E /* snAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DA3FD7298FB58300DC322E /* snAppApp.swift */; };
 		C2DA3FDA298FB58300DC322E /* GeneralSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DA3FD9298FB58300DC322E /* GeneralSettings.swift */; };
 		C2DA3FDC298FB58400DC322E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2DA3FDB298FB58400DC322E /* Assets.xcassets */; };
@@ -61,7 +61,6 @@
 /* Begin PBXFileReference section */
 		C23D40F22D720CED009C17B0 /* StoreKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitManager.swift; sourceTree = "<group>"; };
 		C23D40F32D720CED009C17B0 /* Tips.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Tips.plist; sourceTree = "<group>"; };
-		C23D40F42D720CED009C17B0 /* Synced Tips.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Synced Tips.storekit"; sourceTree = "<group>"; };
 		C23D40F52D720CED009C17B0 /* Local Tips.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Local Tips.storekit"; sourceTree = "<group>"; };
 		C23D40FB2D720D03009C17B0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		C23D40FD2D720D62009C17B0 /* TipJar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipJar.swift; sourceTree = "<group>"; };
@@ -81,6 +80,7 @@
 		C2ADEBE929A725EF0038DEDB /* SnapInstallationChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapInstallationChecker.swift; sourceTree = "<group>"; };
 		C2ADEBEB29A72C430038DEDB /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		C2B2790729C56F1500914E63 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
+		C2CCDC932D76AE9200D91A08 /* Synced Tips.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Synced Tips.storekit"; sourceTree = "<group>"; };
 		C2DA3FD4298FB58300DC322E /* snApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = snApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2DA3FD7298FB58300DC322E /* snAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = snAppApp.swift; sourceTree = "<group>"; };
 		C2DA3FD9298FB58300DC322E /* GeneralSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSettings.swift; sourceTree = "<group>"; };
@@ -129,8 +129,8 @@
 			children = (
 				C23D40FD2D720D62009C17B0 /* TipJar.swift */,
 				C23D40F22D720CED009C17B0 /* StoreKitManager.swift */,
+				C2CCDC932D76AE9200D91A08 /* Synced Tips.storekit */,
 				C23D40F32D720CED009C17B0 /* Tips.plist */,
-				C23D40F42D720CED009C17B0 /* Synced Tips.storekit */,
 				C23D40F52D720CED009C17B0 /* Local Tips.storekit */,
 			);
 			path = StoreKit;
@@ -364,11 +364,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C23D40F82D720CED009C17B0 /* Synced Tips.storekit in Resources */,
 				C23D40F92D720CED009C17B0 /* Tips.plist in Resources */,
 				C23D40FA2D720CED009C17B0 /* Local Tips.storekit in Resources */,
 				C2DA3FDF298FB58400DC322E /* Preview Assets.xcassets in Resources */,
 				C25111262A21F5DC0051BED0 /* DarkDemo.mov in Resources */,
+				C2CCDC942D76AE9200D91A08 /* Synced Tips.storekit in Resources */,
 				C25111282A21F5E00051BED0 /* LightDemo.mov in Resources */,
 				C2DA3FDC298FB58400DC322E /* Assets.xcassets in Resources */,
 			);
