@@ -14,13 +14,72 @@
 
   ],
   "products" : [
-
+    {
+      "displayPrice" : "0.99",
+      "familyShareable" : false,
+      "internalID" : "6742657154",
+      "localizations" : [
+        {
+          "description" : "Let the developer know you love the app!",
+          "displayName" : "Appreciation",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "Tip_1",
+      "referenceName" : "Appreciation",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "4.99",
+      "familyShareable" : false,
+      "internalID" : "6742657263",
+      "localizations" : [
+        {
+          "description" : "Show your gratitude with a thoughtful token!",
+          "displayName" : "Heartfelt Gift",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "Tip_2",
+      "referenceName" : "Heartfelt Gift",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "9.99",
+      "familyShareable" : false,
+      "internalID" : "6742657313",
+      "localizations" : [
+        {
+          "description" : "Make a meaningful impact to the developer!",
+          "displayName" : "Impactful Gesture",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "Tip_3",
+      "referenceName" : "Impactful Gesture",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "19.99",
+      "familyShareable" : false,
+      "internalID" : "6742657603",
+      "localizations" : [
+        {
+          "description" : "Supercharge the developer's efforts!",
+          "displayName" : "Mega Support",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "Tip_4",
+      "referenceName" : "Mega Support",
+      "type" : "NonConsumable"
+    }
   ],
   "settings" : {
     "_applicationInternalID" : "6449620109",
     "_developerTeamID" : "3S6NT5MUQZ",
     "_failTransactionsEnabled" : false,
-    "_lastSynchronizedDate" : 763494038.03870904,
+    "_lastSynchronizedDate" : 770811044.99259603,
     "_storeKitErrors" : [
       {
         "current" : null,

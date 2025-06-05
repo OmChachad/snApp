@@ -85,6 +85,9 @@
          identifier = "com.apple.dt.IDEFoundation.CurrentLocationScenarioIdentifier"
          referenceType = "1">
       </LocationScenarioReference>
+      <StoreKitConfigurationFileReference
+         identifier = "../../snApp/StoreKit/Synced Tips.storekit">
+      </StoreKitConfigurationFileReference>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"

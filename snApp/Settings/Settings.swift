@@ -24,7 +24,7 @@ struct SettingsView: View {
                 .tag(2)
             
             TipJar()
-                .environmentObject(Store())
+                .environmentObject(Store.shared)
                 .tabItem {
                     Label("Tip Jar", systemImage: "heart.fill")
                 }

@@ -122,7 +122,7 @@ struct MenuBar: View {
                 .sheet(isPresented: $showTipJar) {
                     TipJar()
                         .ultraThinPresentationBackground()
-                        .environmentObject(Store())
+                        .environmentObject(Store.shared)
                         .safeAreaInset(edge: .bottom) {
                             Button("Close") {
                                 showTipJar.toggle()

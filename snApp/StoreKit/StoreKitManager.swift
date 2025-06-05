@@ -27,7 +27,7 @@ class Store: ObservableObject {
 
     private let productIdToEmoji: [String: String]
 
-    init() {
+    private init() {
         productIdToEmoji = Store.loadProductIdToEmojiData()
 
         //Initialize empty products, and then do a product request asynchronously to fill them in.
