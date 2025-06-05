@@ -81,6 +81,7 @@
 		C2ADEBEB29A72C430038DEDB /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		C2B2790729C56F1500914E63 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
 		C2CCDC932D76AE9200D91A08 /* Synced Tips.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Synced Tips.storekit"; sourceTree = "<group>"; };
+		C2CD47D02DF19ACD006A7E43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C2DA3FD4298FB58300DC322E /* snApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = snApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2DA3FD7298FB58300DC322E /* snAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = snAppApp.swift; sourceTree = "<group>"; };
 		C2DA3FD9298FB58300DC322E /* GeneralSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSettings.swift; sourceTree = "<group>"; };
@@ -214,6 +215,7 @@
 		C2DA3FD6298FB58300DC322E /* snApp */ = {
 			isa = PBXGroup;
 			children = (
+				C2CD47D02DF19ACD006A7E43 /* Info.plist */,
 				C2DA3FD7298FB58300DC322E /* snAppApp.swift */,
 				C25111292A221B6B0051BED0 /* AppDelegate.swift */,
 				C25111222A20D1B40051BED0 /* Introduction.swift */,
@@ -577,6 +579,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = snApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = snApp;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_LSUIElement = YES;
@@ -610,6 +613,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = snApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = snApp;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_LSUIElement = YES;
