@@ -111,7 +111,7 @@ struct MenuBar: View {
         .overlay(alignment: .topTrailing) {
             if showSettingsButton {
                 Button {
-                    showTipJar.toggle()
+                    openWindow(id: "TipJar")
                 } label: {
                     Image(systemName: "heart.fill")
                         .foregroundColor(.pink)
@@ -119,20 +119,6 @@ struct MenuBar: View {
                 }
                 .padding(5)
                 .buttonStyle(.borderless)
-                .sheet(isPresented: $showTipJar) {
-                    TipJar()
-                        .ultraThinPresentationBackground()
-                        .environmentObject(Store.shared)
-                        .safeAreaInset(edge: .bottom) {
-                            Button("Close") {
-                                showTipJar.toggle()
-                            }
-                            .buttonStyle(.borderedProminent)
-                            .padding()
-                            .frame(maxWidth: .infinity)
-                            .background(.ultraThinMaterial)
-                        }
-                }
             }
         }
     }

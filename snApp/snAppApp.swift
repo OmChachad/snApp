@@ -27,5 +27,12 @@ struct snAppApp: App {
         .onChange(of: appearance) { _ in
             appDelegate.setMenuBar()
         }
+        
+        WindowGroup("Tip Jar", id: "TipJar") {
+            TipJar()
+                .frame(idealWidth: 400, idealHeight: 500)
+                .environmentObject(Store.shared)
+        }
+        .defaultSize(width: 400, height: 500)
     }
 }
